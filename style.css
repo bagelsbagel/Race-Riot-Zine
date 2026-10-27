@@ -1,0 +1,98 @@
+/* Text Formatting */
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: rgb(227, 231, 230);
+    padding: 30px 50px;
+    border: dashed 3px var(--pink);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+} 
+
+p {
+    text-align: justify;
+    color:black;
+}
+
+/* Links */
+
+a {
+    color:var(--pink);
+    text-decoration: none;
+}
+
+a:hover {
+    color:var(--purple);
+}
+
+/* Flexbox Grid */
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.flex-item {
+    margin: 0;
+    height: 180px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.flex-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.flex-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Image focus on click - Javascript */
+
+dialog {
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: 90vw;
+    max-height: 90vh;
+    outline: none;
+    border-radius: 12px;
+}
+
+dialog img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    cursor: zoom-out;
+}
+
+dialog::backdrop {
+    background: radial-gradient(circle, #ffd7bc, #f2f2f2);
+}
+
+/* Decorative */
+
+.radial-bg {
+    background: radial-gradient(circle, #ccffb7, #e2e3e3); 
+}
+
+hr {
+    width: min(800px, 100%);
+    border-color:var(--pink);
+}
+
+:root {
+    --pink: rgb(255, 8, 156);
+    --purple: rgb(186, 70, 248);
+}
